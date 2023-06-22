@@ -1,0 +1,42 @@
+# 基础配置
+base:
+  page: 1                     # 默认查询开始页数
+  size: 10                    # 默认查询数量
+
+# 搜索引擎API配置
+fofa:
+  email: ""
+  key: ""
+
+shodan:
+  apiKey: ""
+
+# 钟馗之眼
+zoomeye:
+  apiKey: ""
+
+# 360网络空间测绘
+quake:
+  apiKey: ""
+
+# 鹰图平台
+hunter:
+  apiKey: ""
+
+# 零零信安
+zone:
+  apiKey: ""
+
+github:
+  proxies: '{"http": "socks5://127.0.0.1:10808", "https": "socks5://127.0.0.1:10808"}'   # 代理IP
+  token: ""
+
+finger:
+  FingerPrint_Update: False     # 是否选择每次运行在线更新指纹库
+
+# Mysql数据库配置
+database:
+  host: "127.0.0.1"             # 数据库地址
+  port: 3306                    # 数据库端口
+  user: 'root'                  # 数据库用户名
+  password: 'root'              # 数据库密码
