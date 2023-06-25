@@ -43,12 +43,12 @@ def parse_args():
     target.add_argument("-p", "--page", type=int, help="查询结果页数(default:1)")
     target.add_argument("-s", "--size", type=int, help="查询结果数量(default:10)")
     target.add_argument("-f", "--file", help="通过txt文件导入搜索语法")
-    target.add_argument("-gs", "--gitsort", type=str,
-                        help="github匹配模式(stars|forks|updated|best match)[default:best match]")
 
     # 其他功能相关参数
     other = parser.add_argument_group('other')
     other.add_argument("-fi", "--finger", action="store_true", default=False, help="是否调用finger进行指纹识别(default:False)")
+    other.add_argument("-gs", "--gitsort", type=str,
+                        help="github匹配模式(stars|forks|updated|best match)[default:best match]")
 
     # 结果输出相关参数
     output = parser.add_argument_group('output')
