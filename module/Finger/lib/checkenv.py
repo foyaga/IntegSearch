@@ -10,6 +10,7 @@ import requests
 from config.configfile import config
 from module.Finger.config.config import head
 from module.Finger.config.data import path, logging
+from packaging import version
 
 
 class CheckEnv:
@@ -22,7 +23,7 @@ class CheckEnv:
             self.update()
 
     def python_check(self):
-        if self.pyVersion < "3.6":
+        if  version.parse(self.pyVersion) < version.parse("3.6"):
             logging.error("此Python版本 ('{0}') 不兼容,成功运行程序你必须使用版本 >= 3.6 (访问 ‘https://www.python.org/downloads/".format(
                 self.pyVersion))
             exit(0)
