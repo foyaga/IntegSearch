@@ -77,7 +77,7 @@ class Process(object):
                 worksheet.append(res)
 
             for r in range(max_row + 1, max_row + len(self.result) + 1):
-                worksheet.cell(r, 3).style = "BodyStyle"
+                worksheet.cell(r, 3)
 
             workbook.save(file_path)
             logging.info(f'搜索结果文件输出路径为:{file_path}\n')
