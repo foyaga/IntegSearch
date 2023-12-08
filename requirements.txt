@@ -12,3 +12,7 @@ beautifulsoup4>=4.11.1
 XlsxWriter>=1.4.4
 ipaddress>=1.0.23
 colorama>=0.4.4
+XlsxWriter>=1.4.4
+colorama>=0.4.4
+lxml
+pyreadline

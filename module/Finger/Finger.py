@@ -12,7 +12,7 @@ wininit(autoreset=True)
 
 
 def main(urls, output):
-    CheckEnv()
+    #CheckEnv()
     initoptions(urls)
     Request()
     IpAttributable()
