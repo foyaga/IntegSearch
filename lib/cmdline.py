@@ -32,7 +32,6 @@ def parse_args():
     parser = argparse.ArgumentParser(
         prog="python main.py",
         formatter_class=argparse.RawDescriptionHelpFormatter,
-        exit_on_error=False,
         add_help=False)
 
     # 基础查询相关参数
